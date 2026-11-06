@@ -1,9 +1,9 @@
 const courses = [
     { id: "CSE 110", subject: "CSE", number: 110, title: "Programming Building Blocks", credits: 2 },
-    { id: "CSE 111", subject: "CSE", number: 111, title: "Programming with Functions", credits: 3 },
+    { id: "CSE 111", subject: "CSE", number: 111, title: "Programming with Functions", credits: 2 },
     { id: "WDD 130", subject: "WDD", number: 130, title: "Web Fundamentals", credits: 2 },
-    { id: "WDD 131", subject: "WDD", number: 131, title: "Web Frontend Development I", credits: 3 },
-    { id: "WDD 231", subject: "WDD", number: 231, title: "Web Frontend Development II", credits: 4 }
+    { id: "WDD 131", subject: "WDD", number: 131, title: "Web Frontend Development I", credits: 2 },
+    { id: "WDD 231", subject: "WDD", number: 231, title: "Web Frontend Development II", credits: 2 }
 ];
 
 function renderCourses(filterType) {
