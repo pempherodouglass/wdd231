@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 WEB FUNDAMENATL</title>
+    <meta name="description" content="Official student portfolio of Pemphero Douglass. Discover completed web certificate coursework, projects, and professional background.">
+    <meta name="author" content="Pemphero Douglass">
+    <title>Pemphero Douglass - WDD 231 Web Frontend Development I Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>WDD231 WEB FUNDAMENTALS</h1>
+    <header>
+        <img src="images/menu.svg" alt="Site Menu Icon" width="40" height="40">
+        <span>Pemphero Douglass</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-section">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>My name is Pemphero Douglass, and I am an online software development student at BYU-Pathway Worldwide. I am building skills in core frontend web technologies, including HTML, CSS, and JavaScript, to create dynamic and responsive websites.</p>
+            </div>
+            <div class="about-images">
+                <h2>Student Photo</h2>
+                <img src="images/profile.png" alt="Pemphero Douglass profile picture" width="300" height="300">
+            </div>
+        </section>
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="btn-all" class="filter-btn active">All</button>
+                <button id="btn-cse" class="filter-btn">CSE</button>
+                <button id="btn-wdd" class="filter-btn">WDD</button>
+            </div>
+            <div id="course-cards" class="course-grid">
+                <!-- course.js injects cards here dynamically; default fallbacks included below -->
+                <div class="course-card cse">CSE 110</div>
+                <div class="course-card cse">CSE 111</div>
+                <div class="course-card wdd">WDD 130</div>
+                <div class="course-card wdd">WDD 131</div>
+                <div class="course-card wdd">WDD 231</div>
+            </div>
+            <p class="credits-info">The total credits for courses listed above is <span id="total-credits">14</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/Linkedin.png" alt="LinkedIn" width="24" height="24"></a>
+            <a href="https://github.com" target="_blank" rel="noopener"><img src="images/Github.png" alt="GitHub" width="24" height="24"></a>
+            <a href="https://x.com" target="_blank" rel="noopener"><img src="images/Twitter.png" alt="X (formerly Twitter)" width="24" height="24"></a>
+        </div>
+        <p>&copy; <span id="currentyear">2026</span> • Pemphero Douglass • Malawi</p>
+        <p id="lastModified">Last Modification: Loading...</p>
+    </footer>
 </body>
 </html>
