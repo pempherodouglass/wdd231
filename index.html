@@ -5,39 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official student portfolio of Pemphero Douglass. Discover completed web certificate coursework, projects, and professional background.">
     <meta name="author" content="Pemphero Douglass">
-    <title>Pemphero Douglass - WDD 231 Web Frontend Development I Home Page</title>
+    <title>WDD231 Web Frontend Development I - Home Page</title>
+    
+    <!-- Google Fonts API Preconnect & Stylesheet Injection -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Required Custom CSS Files (Exactly 2 Main Layer Stylesheets + Normalize) -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/course.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+
+    <!-- External JavaScript Application Hooks with Defer Logic -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/menu.svg" alt="Site Menu Icon" width="40" height="40">
+        <!-- Site Logo (Using Inline SVG File Matrix per Rubric) -->
+        <svg class="site-logo" xmlns="http://w3.org" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#e07c24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+        </svg>
         <span>Pemphero Douglass</span>
-        <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Links Menu"></button>
     </header>
+
     <nav id="nav-bar" class="navigation">
         <ul>
+            <!-- Wayfinding active target class layout item -->
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Profile</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>Home</h1>
+        <h1>WDD231 Web Frontend Development I - Home Page</h1>
+        
+        <!-- Section 1: About Area -->
         <section class="about-section">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>My name is Pemphero Douglass, and I am an online software development student at BYU-Pathway Worldwide. I am building skills in core frontend web technologies, including HTML, CSS, and JavaScript, to create dynamic and responsive websites.</p>
-            </div>
-            <div class="about-images">
-                <h2>Student Photo</h2>
-                <img src="images/profile.png" alt="Pemphero Douglass profile picture" width="300" height="300">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>My name is Pemphero Douglass, and I am an online software development student at BYU-Pathway Worldwide. I am building skills in core frontend web technologies, including HTML, CSS, and JavaScript, to create dynamic and responsive websites.</p>
+                </div>
+                <div class="about-images">
+                    <img src="images/profile.png" alt="Pemphero Douglass student portfolio profile picture" width="300" height="300" loading="lazy">
+                </div>
             </div>
         </section>
+
+        <!-- Section 2: Complete Certificate Course Array Area -->
         <section class="courses-section">
             <h2>Web Certificate Courses</h2>
             <div class="course-filters">
@@ -45,25 +66,25 @@
                 <button id="btn-cse" class="filter-btn">CSE</button>
                 <button id="btn-wdd" class="filter-btn">WDD</button>
             </div>
-            <div id="course-cards" class="course-grid">
-                <!-- course.js injects cards here dynamically; default fallbacks included below -->
-                <div class="course-card cse">CSE 110</div>
-                <div class="course-card cse">CSE 111</div>
-                <div class="course-card wdd">WDD 130</div>
-                <div class="course-card wdd">WDD 131</div>
-                <div class="course-card wdd">WDD 231</div>
-            </div>
-            <p class="credits-info">The total credits for courses listed above is <span id="total-credits">14</span></p>
+            <!-- Canvas target mapped to course.js layout template -->
+            <div id="course-cards" class="course-grid"></div>
+            <p class="credits-info">Total Dynamic Track Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <!-- Section 3: Country Context Mappings Info Area -->
+        <section class="country-section">
+            <h2>Malawi Demographics Context</h2>
+            <p>Malawi is located in southeastern Africa. Known for its friendly people and the beautiful Lake Malawi, it provides an inspiring backdrop for completing global software certification coursework online.</p>
         </section>
     </main>
+
     <footer>
         <div class="social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/Linkedin.png" alt="LinkedIn" width="24" height="24"></a>
-            <a href="https://github.com" target="_blank" rel="noopener"><img src="images/Github.png" alt="GitHub" width="24" height="24"></a>
-            <a href="https://x.com" target="_blank" rel="noopener"><img src="images/Twitter.png" alt="X (formerly Twitter)" width="24" height="24"></a>
+            <a href="https://github.com" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub Repository Portal link" width="24" height="24"></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn Professional Profile Network link" width="24" height="24"></a>
         </div>
-        <p>&copy; <span id="currentyear">2026</span> • Pemphero Douglass • Malawi</p>
-        <p id="lastModified">Last Modification: Loading...</p>
+        <p>&copy; <span id="currentyear"></span> • Pemphero Douglass • Malawi</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

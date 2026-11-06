@@ -1,10 +1,13 @@
-// Store the button element
-const navbutton = document.querySelector("#ham-btn");
-const navlinks = document.querySelector("#nav-bar");
+document.addEventListener("DOMContentLoaded", () => {
+    const navButton = document.querySelector("#ham-btn");
+    const navLinks = document.querySelector("#nav-bar");
 
-// Toggle the 'show' class on the body when clicked
-navbutton.addEventListener("click", () => {
-    document.body.classList.toggle("show");
-    navlinks.classList.toggle("show");
+    if (navButton && navLinks) {
+        navButton.addEventListener("click", () => {
+            document.body.classList.toggle("show");
+            navLinks.classList.toggle("show");
+        });
+    }
 });
+
 

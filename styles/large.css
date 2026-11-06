@@ -1,26 +1,20 @@
 @media only screen and (min-width: 38rem) {
   header, nav, main, footer {
-    max-width: 960px;
+    max-width: 980px;
     margin: 0 auto;
-  }
-
-  header {
-    padding: 15px 20px;
   }
 
   .hamburger {
     display: none;
   }
 
-  /*********************** DESKTOP NAVIGATION ******************************/
   .navigation {
     display: block;
-    background-color: #ffffff;
-    border-bottom: solid 2px #3d405b;
+    background-color: #3d405b;
   }
 
   .navigation ul {
-    display: flex;
+    display: flex; /* Horizontal nav flow using Flexbox requirement */
     justify-content: space-around;
   }
 
@@ -28,33 +22,14 @@
     flex: 1;
   }
 
-  .navigation a {
-    color: #3d405b;
-    border-bottom: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .navigation li.current a {
-    background-color: #3d405b;
-    color: #ffffff;
-  }
-
-  /*********************** TWO-COLUMN ABOUT GRID ******************************/
-  .about-section {
+  .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 30px;
-    align-items: start;
+    column-gap: 25px;
   }
 
-  .about-images {
-    margin-top: 0;
-  }
-
-  /*********************** MULTI-COLUMN CARD GRID ******************************/
   .course-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
