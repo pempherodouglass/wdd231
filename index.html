@@ -7,12 +7,10 @@
     <meta name="author" content="Pemphero Douglass">
     <title>WDD231 Web Frontend Development I - Home Page</title>
     
-    <!-- Google Fonts API Preconnect & Stylesheet Injection -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <!-- Required Custom CSS Files (Exactly 2 Main Layer Stylesheets + Normalize) -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -24,7 +22,6 @@
 </head>
 <body>
     <header>
-        <!-- Site Logo (Using Inline SVG File Matrix per Rubric) -->
         <svg class="site-logo" xmlns="http://w3.org" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#e07c24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
         </svg>
@@ -34,11 +31,9 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <!-- Wayfinding active target class layout item -->
             <li class="current"><a href="#">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="final/index.html">Final Project</a></li>
-            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Profile</a></li>
         </ul>
     </nav>
 
@@ -80,8 +75,8 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub Repository Portal link" width="24" height="24"></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn Professional Profile Network link" width="24" height="24"></a>
+           <img src="images/github.png" alt="GitHub Repository Portal link" width="24" height="24">
+           <img src="images/linkedin.png" alt="LinkedIn Professional Profile Network link" width="24" height="24">
         </div>
         <p>&copy; <span id="currentyear"></span> • Pemphero Douglass • Malawi</p>
         <p id="lastModified"></p>
