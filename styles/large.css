@@ -14,7 +14,7 @@
   }
 
   .navigation ul {
-    display: flex; /* Horizontal nav flow using Flexbox requirement */
+    display: flex; 
     justify-content: space-around;
   }
 
