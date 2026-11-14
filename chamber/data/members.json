@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Capital City Tech Solutions",
+    "address": "Plot 45, City Centre, Lilongwe",
+    "phone": "+265 999 123 456",
+    "website": "https://example.com",
+    "image": "tech-solutions.webp",
+    "membershipLevel": 3,
+    "industry": "Information Technology"
+  },
+  {
+    "name": "Warm Heart Coffee Roasters",
+    "address": "14 Mandala Road, Area 3, Lilongwe",
+    "phone": "+265 888 234 567",
+    "website": "https://example.com",
+    "image": "warm-heart-coffee.webp",
+    "membershipLevel": 3,
+    "industry": "Food & Hospitality"
+  },
+  {
+    "name": "Rift Valley Builders",
+    "address": "88 Kanengo Industrial Site, Lilongwe",
+    "phone": "+265 999 345 678",
+    "website": "https://example.com",
+    "image": "rift-valley.webp",
+    "membershipLevel": 2,
+    "industry": "Construction"
+  },
+  {
+    "name": "Lakeview Financial Advisors",
+    "address": "22 Presidential Way, Lilongwe",
+    "phone": "+265 888 456 789",
+    "website": "https://example.com",
+    "image": "lakeview-finance.webp",
+    "membershipLevel": 2,
+    "industry": "Finance & Consulting"
+  },
+  {
+    "name": "Chitukuko Agro-Suppliers",
+    "address": "5 Old Town Market St, Lilongwe",
+    "phone": "+265 999 567 890",
+    "website": "https://example.com",
+    "image": "chitukuko-agro.webp",
+    "membershipLevel": 1,
+    "industry": "Agriculture"
+  },
+  {
+    "name": "Nyasa Print & Design",
+    "address": "19 Area 47 Sector 2, Lilongwe",
+    "phone": "+265 888 678 901",
+    "website": "https://example.com",
+    "image": "nyasa-print.webp",
+    "membershipLevel": 1,
+    "industry": "Media & Marketing"
+  },
+  {
+    "name": "Central Region Logistics",
+    "address": "101 M1 Highway North, Lilongwe",
+    "phone": "+265 999 789 012",
+    "website": "https://example.com",
+    "image": "central-logistics.webp",
+    "membershipLevel": 3,
+    "industry": "Transport & Freight"
+  }
+]
