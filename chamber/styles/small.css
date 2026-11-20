@@ -7,9 +7,14 @@
     --text-dark: #1d262b;
     --text-light: #ffffff;
     --border-color: #d9e2e6;
+    --transparent: #00000000;
+    --overlay-bg: #143642d9;
+    --nav-divider: #ffffff26;
+    --shadow-color: #0000000f;
     --heading-font: 'Roboto', sans-serif;
     --body-font: 'Roboto', sans-serif;
 }
+
 
 * {
     box-sizing: border-box;
