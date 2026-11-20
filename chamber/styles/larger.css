@@ -34,7 +34,6 @@
         font-size: 2rem;
     }
 
-    /* Multi-column row layout for Desktop List View */
     #directory-container.list-view .member-card {
         display: grid;
         grid-template-columns: 2fr 2fr 1.3fr 1.2fr 1fr;
@@ -48,6 +47,27 @@
     #directory-container.list-view .member-card a,
     #directory-container.list-view .membership-tag {
         margin: 0;
+    }
+
+    .hero-overlay {
+        bottom: 2rem;
+        left: 2rem;
+        right: auto;
+        max-width: 450px;
+        text-align: left;
+        padding: 1.5rem;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.75rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     footer {

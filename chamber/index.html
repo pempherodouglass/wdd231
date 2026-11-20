@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Lilongwe Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Lilongwe Chamber of Commerce. Supporting local businesses, economic growth, and community partnerships across Lilongwe, Malawi.">
+    <meta name="author" content="Pemphero Douglass">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Home | Lilongwe Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Lilongwe Chamber of Commerce. Discover local events, weather, and member business spotlights.">
+    <meta property="og:image" content="https://pempherodouglass.github.io/wdd231/chamber/images/lilongwe.jpg">
+    <meta property="og:image:alt" content="Lilongwe Chamber of Commerce">
+    <meta property="og:url" content="https://pempherodouglass.github.io/wdd231/chamber/index.html">
+    <meta property="og:site_name" content="Lilongwe Chamber of Commerce">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="brand">
+                <img src="images/lilongwe.jpg" alt="Lilongwe Chamber of Commerce Logo" width="56" height="56">
+                <div class="brand-text">
+                    <span class="brand-title">Lilongwe</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </div>
+            <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">☰</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Lilongwe Chamber of Commerce Building" width="1200" height="600">
+            <div class="hero-overlay">
+                <h1>Voice of Business in Lilongwe</h1>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="events-card">
+                <h2>Upcoming Events</h2>
+                <div class="event-item">
+                    <h3>Lilongwe Business Networking Mixer</h3>
+                    <p><strong>Date:</strong> November 28, 2026 | 5:30 PM</p>
+                    <p><strong>Location:</strong> Bingu International Convention Centre (BICC)</p>
+                    <p>Connect with local entrepreneurs, investors, and industry leaders over light refreshments.</p>
+                </div>
+                <div class="event-item">
+                    <h3>SME Export Readiness Workshop</h3>
+                    <p><strong>Date:</strong> December 5, 2026 | 9:00 AM</p>
+                    <p><strong>Location:</strong> LCCI Conference Hall, Area 49</p>
+                    <p>Learn practical steps for scaling Malawian products into regional SADC markets.</p>
+                </div>
+            </section>
+
+            <section class="weather-card">
+                <h2>Lilongwe Weather</h2>
+                <div id="current-weather">
+                </div>
+                <hr>
+                <h3>3-Day Forecast</h3>
+                <div id="weather-forecast">
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p class="footer-heading">Lilongwe Chamber of Commerce</p>
+            <p>102 Capital City Way, Area 49</p>
+            <p>Lilongwe, Malawi</p>
+            <p>info@lilongwechamber.org</p>
+            <p>+265 1 770 000</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Pemphero Douglass</p>
+            <p>&copy; <span id="currentyear"></span> Lilongwe Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
