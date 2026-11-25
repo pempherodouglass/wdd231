@@ -16,7 +16,7 @@
 
     nav {
         display: block;
-        background-color: transparent;
+        background-color: var(--transparent);
     }
 
     nav ul {
@@ -68,6 +68,11 @@
 
     #spotlight-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .join-container {
+        grid-template-columns: 1.3fr 1fr;
+        align-items: start;
     }
 
     footer {

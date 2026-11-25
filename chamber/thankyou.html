@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Lilongwe Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Lilongwe Chamber of Commerce.">
+  <meta name="author" content="Pemphero Douglass">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="brand">
+        <img src="images/lilongwe.jpg" alt="Lilongwe Chamber of Commerce Logo" width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-title">Lilongwe</span>
+          <span class="brand-subtitle">Chamber of Commerce</span>
+        </div>
+      </div>
+      <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Thank You for Applying!</h1>
+      <p>Your membership application has been received by the Lilongwe Chamber of Commerce.</p>
+    </section>
+
+    <section class="thankyou-box">
+      <h2>Application Details</h2>
+      <div id="results"></div>
+      <a href="index.html" class="cta-button">Back to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p class="footer-heading">Lilongwe Chamber of Commerce</p>
+      <p>102 Capital City Way, Area 49</p>
+      <p>Lilongwe, Malawi</p>
+      <p>info@lilongwechamber.org</p>
+      <p>+265 1 770 000</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+    </div>
+    <div class="footer-meta">
+      <p>WDD 231 Class Project</p>
+      <p>Pemphero Douglass</p>
+      <p>&copy; <span id="currentyear"></span> Lilongwe Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
